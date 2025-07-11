@@ -1,7 +1,7 @@
 // Base directory for input and output
-// baseDir = "/Volumes/SanDisk/CROPS/";
-inputDir = "/Users/luizmaniero/Documents/DataScience/HMRI_IHC_colab/20250503_bGAL_results/20250701_bGAL_nuclei_masks/Image_B_Gal_nuclei_masks/"
-outputDir = "/Users/luizmaniero/Documents/DataScience/HMRI_IHC_colab/20250701_bGAL_results/";
+// baseDir = "/path/to/directory/";
+inputDir = "/path/to/nuclei_masks/"
+outputDir = "/path/to/20250701_results/";
 
 // === List of image files ===
 imageList = getFileList(inputDir);
@@ -41,7 +41,7 @@ for (i = 0; i < imageList.length; i++) {
 // saveAs("Tiff", outputDir + replace(imageName, ".tif", "_Overlay.tif"));
 
 // Export results
-saveAs("Results", outputDir + "bGAL_Nuclei_count_20250107.csv");
+saveAs("Results", outputDir + "Nuclei_count_20250107.csv");
 run("Close All");
 
 setBatchMode(false);
